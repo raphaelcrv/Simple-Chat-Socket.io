@@ -37,9 +37,10 @@ $(document).ready(function(){
     }); 
 
     socket.on("chat", function(client,msg) {
+			console.log(client)
     	if (ready) {
 				var time = new Date();
-				$(".chat").append('<li class="field"><div class="msg"><span>' + client + ':</span><p>' + msg + '</p><time>' + time.getHours() + ':' + time.getMinutes() + '</time></div></li>' + toBottom);
+				$(".chat").append('<li class="field"><div class="msg"><span>' + client + ':</span><p>' + msg + '</p><time>' + time.getHours() + ':' + time.getMinutes() + '</time></div></li>');
 				
     	}
     });

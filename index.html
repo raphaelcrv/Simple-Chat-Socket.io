@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple chat</title>
+  <title>Apura chat</title>
   <link rel="stylesheet" href="assets/css.css">
 </head>
 <body>
 
 <div class="nickname_container" id="nick">
 
-  <span>Type your nickname:</span>
-  <form id="submit"><input type="text" id="nickname" /></form>
+  <span>Escolha um nickname:</span>
+  <form id="submit"><input type="text" maxlength="10" id="nickname" /></form>
 
 </div>
 
@@ -25,10 +25,15 @@
       
   </ol>
   <div id='bottom'></div>
-  <input class="textarea" type="text" placeholder="Type here!" id="textarea" />
+  
+  <input class="textarea" maxlength="100" type="text" placeholder="Type here!" id="textarea" />
 </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/socket.io-client/socket.io.js"></script>
+    <!-- <script src="node_modules/socket.io-client/socket.io.js"></script> -->
+    <!-- <script src="http://yournodeserver/socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+
+
     <script src="assets/js.js"></script>
 </body>
 </html>
